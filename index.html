@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Estelar</title>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#sobre_nosotras">Sobre nosotras</a></li>
+            <li><a href="#form_contacto">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="cabecera">
+        <!--<img src="###">-->
+        <h1>Aura Estelar</h1>
+        <div class="section_login">
+            <button type="button" onclick="alert('Login!');">LOGIN</button>
+            <h4>¿No tienes cuenta? Registrate</h4>
+        </div>
+
+        <div class="section_redes">
+            <img src="instagram">
+            <img src="mail">
+            <img src="x">
+        </div>
+    </div>
+    <div class="servicios" id="servicios">
+        <div class="card">
+            <img src="carta_natal">
+            <h3>Carta Natal</h3>
+            <p>Tu carta natal es una "foto" del cielo al momento de tu nacimiento; puedes ver la ubicación y conexiones de los planetas en ese instante para hacer de la astrología tu herramienta de autoobservación y crecimiento.</p>
+        </div>
+        <div class="card">
+            <img src="rev_solar">
+            <h3>Revolucion Solar</h3>
+            <p>Esta es una lectura anual a partir de tu fecha de cumpleaños. En ella se profundizará en qué energías vas a transitar en ese año y como estas te afectarán.</p>
+        </div>
+        <div class="card">
+            <img src="sinastria">
+            <h3>Sinastria</h3>
+            <p>La sinastría es un análisis de compatibilidad que hay entre una o más personas, basándose en sus cartas astrales.</p>
+        </div>
+    </div>
+    <div class="sobre_nosotras" id="sobre_nosotras">
+        <img src="sobre_nosotras">
+        <h2>Sobre Nosotras</h2>
+        <p>Somos Cami y Anto, nos formamos como astrólogas en la escuela "Consideral Astrología". Nuestro objetivo es poner a disposición todas la herramientas aprendidas para darle un poco de claridad a tu camino y para ayudarte a conocerte un poco más.</p>
+    </div>
+    <div class="form_contacto" id="form_contacto">
+        <h5>Si tenes dudas o preguntas, puedes contactarnos aquí.<br>Te responderemos lo antes posible!</h5>
+        <div class="form">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Escriba su email"><br><br>
+            <label for="mensaje">Mensaje</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+            <button type="button">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>

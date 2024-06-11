@@ -21,7 +21,7 @@
 }
 
 .cabecera {
-    background-image: url('images/banner.png'); 
+    background-image: url('images/banner.jpg'); 
     background-color: #F8F8F6;
 
     height: 100vh;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.section_login button {
+button {
     background-color: #CE9F41;
     border-radius: 7px;
     border: solid 2px;
@@ -49,19 +49,16 @@
     height: 40px;
     font-weight: bold;
     margin: 20px 0;
-
     transition-property: color;
     transition-duration: 0.5s;
 }
 
-.section_login button:hover {
-   
+button:hover {
     color: #F8F8F6;
 }
 
 .section_login a {
     color: black;
-
     transition-property: color;
     transition-duration: 0.3s;
 }
@@ -88,7 +85,6 @@
 
 
 .mas_info > p {
-
     visibility: hidden;
 
 }
@@ -96,3 +92,9 @@
 .mas_info:hover > p{ 
     visibility: visible;
     }
+
+.form-control{
+    border: none; 
+    border-bottom: solid 1px #a78137; 
+    border-radius: 0;
+}

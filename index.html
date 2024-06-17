@@ -22,24 +22,24 @@
 
     <div class="container-fluid text-center menu" id="home">
         <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-1 ps-1">
+            <div class="col-lg-8 col-md-4 icono_menu"></div>
+            <div class="col-lg-1 col-md-2 icono_menu">
                 <a href="#home">Home</a>
             </div>
-            <div class="col-md-1 ps-1">
+            <div class="col-lg-1 col-md-2 icono_menu">
                 <a href="#servicios">Servicios</a>
             </div>
-            <div class="col-md-1 ps-1">
+            <div class="col-lg-1 col-md-2 icono_menu">
                 <a href="#sobre_nosotras">Sobre nosotras</a>
             </div>
-            <div class="col-md-1 ps-1">
+            <div class="col-lg-1 col-md-2 icono_menu">
                 <a href="#form_contacto">Contacto</a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid cabecera" >
-        <div class="position-absolute start-50 translate-middle section_login">
+    <div class="container-fluid cabecera d-flex align-items-center justify-content-center">
+        <div class="text-center section_login">
             <div>
                 <button type="button" onclick="window.location.href='login.html'">Login</button>
                 <h6><a href="registro.html">¿No tienes cuenta? Registrate</a></h6>
@@ -93,7 +93,7 @@
     
     <div class="container-fluid sobre_nosotras" id="sobre_nosotras">
         <div class="row align-items-center me-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-3">
                 <img class="img-fluid img_sobre_nosotras" alt="img_sobre_nosotras" src="images/sobre_nosotras.jpg">
             </div>
             <div class="col-lg-6 ps-4">
@@ -104,31 +104,40 @@
     </div>
     
     <div class="container mt-5" id="form_contacto">
-        <h5>Si tenes dudas o preguntas, puedes contactarnos aquí.<br>Te responderemos lo antes posible!</h5>
-        <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea id="mensaje" class="form-control" name="mensaje" rows="4" cols="50" placeholder="Mensaje"></textarea>
-            </div>
-            <button type="button">Enviar</button>
-        </form>
+        <div class="row">
+            <h5>Si tenes dudas o preguntas, puedes contactarnos aquí.<br>Te responderemos lo antes posible!</h5>
+            <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" class="form-control" name="mensaje" rows="4" cols="50" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="button">Enviar</button>
+            </form>
+        </div>
+        <div class="col-md-6 pb-5 mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2297114661333!2d-58.38588609999999!3d-34.5983524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab87e4355d9%3A0xb81df7efe6f65415!2sParaguay%201318%2C%20C1057AAV%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1718657059102!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+        
     </div>
    
-<footer class="container-fluid footer pt-5 pb-5">
+    <footer class="container-fluid footer pt-5 pb-5">
         <div class="row ms-5">
             <div class="col-7">
                 <h4><img src="images/icon.png" class="img-logo" alt="img_icon">Aura Estelar</h4>
                 <p>Todos los derechos reservados con Copyright@</p>
             </div>
-            <div class="col-5 align-self-end text-center">
+            <div class="col-4 align-self-center text-end">
 
                         <a href="https://www.instagram.com/" target="_blank"><img class="img-icon" src="images/instagram_white.png" alt="img_instagram"></a>
 
@@ -137,6 +146,7 @@
                         <a href="mailto:test@test.com" target="_blank"><img class="img-icon" src="images/mail_white.png" alt="img_mail"></a>
 
             </div>
+            <div class="col-1"></div>
             
         </div>
     </footer>

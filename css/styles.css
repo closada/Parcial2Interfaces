@@ -38,7 +38,7 @@
 }
 
 
-button {
+.boton {
     background-color: #CE9F41;
     border-radius: 7px;
     border: solid 2px;
@@ -50,7 +50,7 @@ button {
     transition-duration: 0.5s;
 }
 
-button:hover {
+.boton:hover {
     color: #F8F8F6;
 }
 
@@ -127,7 +127,6 @@ button:hover {
 .img-icon {
     height: 40px;
     width: auto;
-    /*background-color: #F8F8F6;*/
     padding: 7px;
     
 }
@@ -142,7 +141,7 @@ button:hover {
   
 }
 
-/* Clases de HTML LOGIN */
+/* Clases de HTML otras */
 .cabecera-otros {
     background-image: url('../images/baner_sin_titulo.jpg'); 
     background-color: #F8F8F6;

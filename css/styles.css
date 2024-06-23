@@ -9,8 +9,7 @@
 
 }
 
-
-.icono_menu:hover > a {
+.icono_menu:hover a {
     
     color: black;
 }
@@ -24,8 +23,9 @@
     background-image: url('../images/banner.jpg'); 
     /* usamos color de fondo para mejorar experiencia de usuario a la hora del login de la pagina */
     background-color: #F8F8F6;
-
+    /* tamaño de altura de la imagen que ocupe toda la resolución de la pantalla */
     height: 100vh;
+    
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
     background-position: center center;
 
@@ -34,7 +34,6 @@
 
     /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
     background-size: cover;
-
 }
 
 
@@ -83,13 +82,13 @@
     }
 
 
-.mas_info > p {
+.mas_info p {
     margin: 0;
     visibility: hidden;
 
 }
 
-.mas_info:hover > p{ 
+.mas_info:hover p{ 
     margin: 0;
     visibility: visible;
     }
@@ -237,6 +236,7 @@
 
   }
 
+  /* esto es tamaño large */
   @media screen and (min-width: 992px) {
 
     .borde_sinastria {

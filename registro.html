@@ -41,14 +41,14 @@
         <div class="form_login">
             <h2 class="mb-3 text-center">Complete sus datos para registrarse:</h2>
 
-              <form class="row g-3">    
+              <form class="row g-3" onsubmit="alert('¡Se ha registrado correctamente! Ya puede iniciar sesión con sus datos.')">    
                 <div class="col-md-6 col-sm-12">
-                    <label for="input_nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="input_nombre" placeholder="Nombre">
+                    <label for="input_nombre" class="form-label">Nombre *</label>
+                    <input type="text" class="form-control" id="input_nombre" placeholder="Nombre" required>
                   </div>
                 <div class="col-md-6 col-sm-12">
-                    <label for="input_apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="input_apellido" placeholder="Apellido">
+                    <label for="input_apellido" class="form-label">Apellido *</label>
+                    <input type="text" class="form-control" id="input_apellido" placeholder="Apellido" required>
                 </div>
                 <div class="col-md-12">
                     <label for="input_direccion" class="form-label">Direccion</label>
@@ -57,7 +57,7 @@
                 <div class="col-md-6 col-sm-6">
                     <label for="input_provincia" class="form-label">Provincia</label>
                     <select id="input_provincia" class="form-select">
-                      <option selected></option>
+                      <option selected>...</option>
                       <option>Buenos Aires</option>
                       <option>Capital Federal</option>
                       <option>Córdoba</option>
@@ -75,17 +75,17 @@
                   <input type="text" class="form-control" id="inputZip" placeholder="Código Postal">
                 </div>
                 <div class="col-md-4">
-                    <label for="input_nacimiento" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="input_nacimiento">
+                    <label for="input_nacimiento" class="form-label">Fecha de nacimiento *</label>
+                    <input type="date" class="form-control" id="input_nacimiento" required>
                 </div>
                   
                 <div class="col-md-6 col-sm-12">
-                  <label for="input_email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="input_email" placeholder="Email">
+                  <label for="input_email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="input_email" placeholder="Email" required>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                  <label for="input_password" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="input_password" placeholder="Crea una contraseña">
+                  <label for="input_password" class="form-label">Contraseña *</label>
+                  <input type="password" class="form-control" id="input_password" placeholder="Crea una contraseña" required>
                 </div>
                 <div class="col-12">
                   <div class="form-check">
@@ -96,7 +96,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="button" onclick="alert('Registro OK!');">Registrarse</button>
+                  <button type="submit" class="btn boton" >Registrarse</button>
                   <h6><a href="login.html">¿Ya tiene cuenta? Inicie sesion</a></h6>
                 </div>
               </form>
@@ -108,16 +108,16 @@
     <footer class="container-fluid footer pt-5 pb-5">
       <div class="row ms-5">
           <div class="col-7">
-              <h4><img src="images/icon.png" class="img-logo" alt="img_icon">Aura Estelar</h4>
+              <h4><img src="images/icon.png" class="img-logo" alt="logo aura estelar">Aura Estelar</h4>
               <p>Todos los derechos reservados con Copyright@</p>
           </div>
           <div class="col-4 align-self-center text-end">
 
-                      <a href="https://www.instagram.com/" target="_blank"><img class="img-icon" src="images/instagram_white.png" alt="img_instagram"></a>
+                      <a href="https://www.instagram.com/" target="_blank"><img class="img-icon" src="images/instagram_white.png" alt="logo instagram"></a>
 
-                      <a href="https://x.com/?lang=es" target="_blank"><img class="img-icon" src="images/x_white.png" alt="img_instagram"></a>
+                      <a href="https://x.com/?lang=es" target="_blank"><img class="img-icon" src="images/x_white.png" alt="logo x"></a>
 
-                      <a href="mailto:test@test.com" target="_blank"><img class="img-icon" src="images/mail_white.png" alt="img_mail"></a>
+                      <a href="mailto:test@test.com" target="_blank"><img class="img-icon" src="images/mail_white.png" alt="logo email"></a>
 
           </div>
           <div class="col-1"></div>
@@ -126,7 +126,10 @@
   </footer>
 
   <div class="wp">
-      <a href="https://wa.me/91165647270" target="_blank"><img class="img-wpp" src="images/wpp.png" alt="img_wpp"></a>
+      <a href="https://wa.me/91165647270" target="_blank"><img class="img-wpp" src="images/wpp.png" alt="logo whatsapp"></a>
   </div>
+
+<!-- Llamada al archivo JavaScript -->
+<script src="acciones.js"></script>      
 </body>
 </html>

@@ -41,7 +41,7 @@
     <div class="container-fluid cabecera d-flex align-items-center justify-content-center">
         <div class="text-center section_login">
             <div>
-                <button type="button" onclick="window.location.href='login.html'">Login</button>
+                <button type="button" class="btn boton" onclick="window.location.href='login.html'">Login</button>
                 <h6><a href="registro.html">¿No tienes cuenta? Registrate</a></h6>
             </div>
         </div>
@@ -52,22 +52,26 @@
             <div class="row">
                 <div class="col-md-4 mt-3">
                     <div class="card">
-                        <img src="images/carta_natal.webp" class="card-img-top" alt="carta_natal">
-                        <div class="card-img-overlay mas_info">
-                            <p>Tu carta natal es una "foto" del cielo al momento de tu nacimiento; puedes ver la ubicación y conexiones de los planetas en ese instante para hacer de la astrología tu herramienta de autoobservación y crecimiento.</p>
-                        </div>
+                        <a href="carta_natal.html">
+                            <img src="images/carta_natal.webp" class="card-img-top" alt="imagen carta natal">
+                            <div class="card-img-overlay mas_info">
+                                <p>Tu carta natal es una "foto" del cielo al momento de tu nacimiento; puedes ver la ubicación y conexiones de los planetas en ese instante para hacer de la astrología tu herramienta de autoobservación y crecimiento.</p>
+                            </div>
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">Carta Natal</h5>
                             <a href="carta_natal.html" class="btn btn-dark">Calcular</a>
-                        </div>
+                        </div>  
                     </div>
                 </div>
                 <div class="col-md-4 mt-3">
                     <div class="card">
-                        <img src="images/revolucion_solar.webp" class="card-img-top" alt="rev_solar">
-                        <div class="card-img-overlay mas_info">
-                            <p>Esta es una lectura anual a partir de tu fecha de cumpleaños. En ella se profundizará en qué energías vas a transitar en ese año y como estas te afectarán.</p>
-                        </div>
+                        <a href="rev_solar.html">
+                            <img src="images/revolucion_solar.webp" class="card-img-top" alt="imagen revolucion solar">
+                            <div class="card-img-overlay mas_info">
+                                <p>Esta es una lectura anual a partir de tu fecha de cumpleaños. En ella se profundizará en qué energías vas a transitar en ese año y como estas te afectarán.</p>
+                            </div>
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">Revolucion Solar</h5>
                             <a href="rev_solar.html" class="btn btn-dark">Calcular</a>
@@ -76,10 +80,12 @@
                 </div>
                 <div class="col-md-4 mt-3">
                     <div class="card">
-                        <img src="images/sinastria.jpeg" class="card-img-top" alt="sinastria">
-                        <div class="card-img-overlay mas_info">
-                            <p>La sinastría es un análisis de compatibilidad que hay entre una o más personas, basándose en sus cartas astrales.</p>
-                        </div>
+                        <a href="sinastria.html">
+                            <img src="images/sinastria.jpeg" class="card-img-top" alt="imagen sinastria">
+                            <div class="card-img-overlay mas_info">
+                                <p>La sinastría es un análisis de compatibilidad que hay entre una o más personas, basándose en sus cartas astrales.</p>
+                            </div>
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">Sinastria</h5>
                             <a href="sinastria.html" class="btn btn-dark">Calcular</a>
@@ -94,7 +100,7 @@
     <div class="container-fluid sobre_nosotras" id="sobre_nosotras">
         <div class="row align-items-center me-5">
             <div class="col-lg-6 mb-3">
-                <img class="img-fluid img_sobre_nosotras" alt="img_sobre_nosotras" src="images/sobre_nosotras.jpg">
+                <img class="img-fluid img_sobre_nosotras" alt="imagen astrologas" src="images/sobre_nosotras.jpg">
             </div>
             <div class="col-lg-6 ps-4">
                 <h2>Sobre Nosotras</h2>
@@ -107,20 +113,20 @@
         <div class="row">
             <h5>Si tenes dudas o preguntas, puedes contactarnos aquí.<br>Te responderemos lo antes posible!</h5>
             <div class="col-md-6">
-            <form>
+            <form onsubmit="alert('¡Se ha enviado su consulta correctamente! A la brevedad recibirá la respuesta por mail.')">
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                    <label for="nombre" class="form-label">Nombre *</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea id="mensaje" class="form-control" name="mensaje" rows="4" cols="50" placeholder="Mensaje"></textarea>
+                    <label for="mensaje" class="form-label">Mensaje *</label>
+                    <textarea id="mensaje" class="form-control" name="mensaje" rows="4" cols="50" placeholder="Mensaje" required></textarea>
                 </div>
-                <button type="button">Enviar</button>
+                <button type="submit" class="btn boton">Enviar</button>
             </form>
         </div>
         <div class="col-md-6 pb-5 mapa">
@@ -134,24 +140,28 @@
     <footer class="container-fluid footer pt-5 pb-5">
         <div class="row ms-5">
             <div class="col-7">
-                <h4><img src="images/icon.png" class="img-logo" alt="img_icon">Aura Estelar</h4>
+                <h4><img src="images/icon.png" class="img-logo" alt="logo aura estelar">Aura Estelar</h4>
                 <p>Todos los derechos reservados con Copyright@</p>
             </div>
             <div class="col-4 align-self-center text-end">
-
-                        <a href="https://www.instagram.com/" target="_blank"><img class="img-icon" src="images/instagram_white.png" alt="img_instagram"></a>
-
-                        <a href="https://x.com/?lang=es" target="_blank"><img class="img-icon" src="images/x_white.png" alt="img_instagram"></a>
-
-                        <a href="mailto:test@test.com" target="_blank"><img class="img-icon" src="images/mail_white.png" alt="img_mail"></a>
-
+  
+                        <a href="https://www.instagram.com/" target="_blank"><img class="img-icon" src="images/instagram_white.png" alt="logo instagram"></a>
+  
+                        <a href="https://x.com/?lang=es" target="_blank"><img class="img-icon" src="images/x_white.png" alt="logo x"></a>
+  
+                        <a href="mailto:test@test.com" target="_blank"><img class="img-icon" src="images/mail_white.png" alt="logo email"></a>
+  
             </div>
             <div class="col-1"></div>
             
         </div>
     </footer>
+  
     <div class="wp">
-        <a href="https://wa.me/91165647270" target="_blank"><img class="img-wpp" src="images/wpp.png" alt="img_wpp"></a>
+        <a href="https://wa.me/91165647270" target="_blank"><img class="img-wpp" src="images/wpp.png" alt="logo whatsapp"></a>
     </div>
-</body>
-</html>
+  
+  <!-- Llamada al archivo JavaScript -->
+  <script src="acciones.js"></script>      
+  </body>
+  </html>

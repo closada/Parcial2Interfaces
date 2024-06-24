@@ -1,7 +1,6 @@
 .menu a{
     text-decoration:none;
     color:#F8F8F6;
-    font-size: 18px;
     padding: 5px;
 
     transition-property: color;
@@ -64,13 +63,11 @@
 }
 
 .mas_info {
-    height: 80%;
     margin: 0px;
     text-align: center;
     display: flex;
     align-items: center;
     color: #F8F8F6;
-    font-size: 20px;  
 
     transition-property: background-color;
     transition-duration: 1s;

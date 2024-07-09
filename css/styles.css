@@ -1,11 +1,23 @@
 .menu a{
     text-decoration:none;
     color:#F8F8F6;
-    padding: 5px;
+    padding: 10px;
 
     transition-property: color;
     transition-duration: 0.5s;
 
+}
+
+
+.bot-servicio:hover {
+    background-color: #CE9F41;
+    color:rgb(24, 23, 23);
+    font-weight: bold;
+    border: solid 2px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .icono_menu:hover a {
@@ -16,6 +28,10 @@
 .menu, .servicios {
     background-color: #CE9F41;
     padding: 15px 0;
+}
+
+.menu {
+    background-color: rgba(206, 159, 65);
 }
 
 .cabecera {
@@ -59,7 +75,7 @@
 }
 
 .section_login a:hover {
-    color: #a78137;
+    color: #CE9F41;
 }
 
 .mas_info {
@@ -92,7 +108,7 @@
 
 .form-control{
     border: none; 
-    border-bottom: solid 1px #a78137; 
+    border-bottom: solid 1px #CE9F41; 
     border-radius: 0;
     background-color: #F8F8F6;
 }
@@ -157,7 +173,7 @@
 .form_login {
     min-width: 400px;
     padding: 70px 30px;
-    border: solid 2px #a78137;
+    border: solid 2px #CE9F41;
     background-color: #F8F8F6;
 }
 
@@ -168,7 +184,7 @@
 }
 
 .form_login a:hover {
-    color: #a78137;
+    color: #CE9F41;
 }
 
 .form_sinastria {
@@ -176,7 +192,7 @@
     min-width: 400px;
     padding: 70px 30px;
     margin: 5px;
-    border: solid 2px #a78137;
+    border: solid 2px #CE9F41;
     background-color: #F8F8F6;
 }
 
@@ -189,7 +205,7 @@
 /* esto es tamaño medio */
 @media screen and (min-width: 568px) {
     .borde_sinastria {
-        border-bottom: 1px dashed #a78137;
+        border-bottom: 1px dashed #CE9F41;
         padding-bottom: 20px;
         margin-bottom: 20px;
       }
@@ -208,7 +224,7 @@
   /* esto es tamaño small */
   @media screen and (max-width: 567px) {
     .borde_sinastria {
-      border-bottom: 1px dashed #a78137;
+      border-bottom: 1px dashed #CE9F41;
       padding-bottom: 20px;
       margin-bottom: 20px;
     }
@@ -237,7 +253,7 @@
   @media screen and (min-width: 992px) {
 
     .borde_sinastria {
-        border-right: 1px dashed #a78137;
+        border-right: 1px dashed #CE9F41;
         border-bottom: none;
       }
 

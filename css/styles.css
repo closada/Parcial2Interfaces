@@ -1,13 +1,23 @@
 .menu a{
     text-decoration:none;
     color:#F8F8F6;
-    padding: 10px;
-
+    padding: 5px;
+    font-weight: bold;
+    
     transition-property: color;
     transition-duration: 0.5s;
 
 }
 
+.menu_scroller {
+    animation:menu_scroll linear;
+    animation-timeline: scroll();
+}
+
+@keyframes menu_scroll {
+from {background-color:#CE9F41}
+to {background-color: rgba(206, 159, 65, 0.585);}
+}
 
 .bot-servicio:hover {
     background-color: #CE9F41;

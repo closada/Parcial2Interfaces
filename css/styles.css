@@ -267,4 +267,8 @@ to {background-color: rgba(206, 159, 65, 0.585);}
         border-bottom: none;
       }
 
+        .section_login {
+        margin-top: 30%;
+    }
+
   }
